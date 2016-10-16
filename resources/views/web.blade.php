@@ -81,14 +81,14 @@
 			</div>
 		</div>
 	</div>
-	<div class="hprolist_c">
+	@foreach($list as $type)
+	
 		<!--1F   遍历这一块-->
-		
-			<div class="hprolist" style="padding-bottom:35px;">
-				@foreach($list as $type)
+			<div class="hprolist" style="padding-bottom:10px;">
 				<?php
 					if($type->pid==0){
 				?>
+				<div class="hprolist_c">
 				<div class="hptitle" style="background-image:url(cssimg/homeg_123.jpg);">
 					<strong><span style="color:#ddd;font-size:20px;float:left;padding-top:10px;padding-left:10px;" >{{ $type->classname }}</span></strong>
 				</div>
@@ -115,17 +115,18 @@
 							<dt>
 							<a href="http://www.361sport.com/index.php?m=Product&a=index&sex=0&sports=12&pclass=4" target="_blank"><img src="admins/upload/{{ $type->goodsimage }}" width="285" height="470" style="float:left;"/></a>
 							</dt>
+							
 							<?php
-}
+						}
 							?>
-						@endforeach	
-						@foreach($data as $good)
+							@foreach($data as $good)
 							<dd><a href="" target="_blank"><img src="admins/upload/{{$good->goodsImage}}" width="174" height="174"/><span>{{ $good->goodsname}}<br /><strong>RMB{{ $good->goodsprice}}</strong></span></a></dd></dl>
-						@endforeach
+							@endforeach
 						</div>
 					</div>	
 		
 	</div>
+	@endforeach
 			<script type="text/javascript" src="../../home/js/simple-calendar.js"></script>
 	    	<script>
 	    		 var myCalendar = new SimpleCalendar('#calendar');

@@ -111,7 +111,7 @@
 // // 	return 123;
 
 // // });
-//前天页面首页
+//前台页面首页
 Route::get('/', function () {
     return view('web');
 });
@@ -273,3 +273,5 @@ Route::any('/user',"Admin\UserController@index2");
 
 //前台首页遍历
 Route::get('/',"StageController@desk");
+
+Route::get('/Ajax/Sendmessage/{phone}/{content}','AjaxController@sendMessage');

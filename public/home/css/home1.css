@@ -1,0 +1,253 @@
+﻿#container {
+	margin: 0 auto;
+	background-color: #eeeeee;
+}
+/*焦点图滚动*/
+.banana {
+	width:100%;
+	height:635px;
+	overflow:hidden;
+	position:relative;
+	max-width:1920px;
+	margin:auto;
+}
+.banana .innterwrap .slides{ position:relative;}
+.banana .innterwrap{ width:1920px; height:635px; margin:0 auto; left:50%;margin-left:-960px; overflow:hidden; position:relative;background: url(../cssimg/loading.gif) 50% no-repeat;}
+.banana .innterwrap ul li{ width:1920px; height:635px; z-index:1; float:left;}
+.banana .innterwrap ul li.on{z-index:3;}
+.banana .innterwrap ul li img{ width:1920px; height:635px; margin:0 auto;}
+.banana  span.btn{width:66px; height:94px; position:absolute;  top:50%;  margin-top:-47px; z-index:3; display:none; cursor:pointer;}
+.banana:hover span.btn{display:block;}
+.banana  span.prv{left:20px; background-image:url(../cssimg/dhleftright.png);}
+.banana  span.next{right:20px; background-image:url(../cssimg/dhleftright.png);background-position:right;}
+.banana .innterwrap ol.btnlist{ position:absolute;  bottom:0px; left:50%; width:1182px; margin-left:-590px; padding:0px;}
+.banana .innterwrap ol.btnlist li{ background:url(../cssimg/bpa2.png);width:234px; cursor:pointer; margin:0px 1px; color:#fff; height:41px;float:left; text-align:center; font-size:13px; line-height:41px;}
+.banana .innterwrap ol.btnlist li.on{background:url(../cssimg/bpa1.png);}
+
+/*中间模块1*/
+.center-pic{
+	width: 1180px;
+	height: 520px;
+	margin: 0 auto;
+	padding-top: 49px;
+}
+.center-pic ul li{
+	float:left;
+	overflow:hidden;
+	height:467px;
+	margin-right:9px;
+}
+.center-pic ul li .pico{
+	overflow:hidden;
+	width:394px;
+	display:inline-block;
+	height:229px;
+	margin-bottom:9px;
+}
+.center-pic ul li img{
+	backface-visibility: hidden;
+	transition: transform 0.3s ease 0s;
+}
+.center-pic ul li img:hover{
+	transform: scale(1.05);
+}
+.center-du{
+	width: 1180px;
+	margin: 0 auto;
+	height:352px;
+}
+.center-du .right_u{
+	float:left;
+	width:238px;
+	margin-left:13px;
+	background:url(../cssimg/homeg_23.jpg) center 25px #f99302 no-repeat;
+	height:149px;
+	text-align:center;
+	padding-top:147px;
+}
+.center-du .right_u a{
+	display:inline-block;
+	width:180px;
+	height:40px;
+	border-radius: 20px;
+	line-height:40px;
+	color:#fff;
+	text-decoration:none;
+	background:#fbb44e;
+	font-size:14px;
+	margin-bottom:20px;
+}
+/*科技点*/
+.hkjd{
+	background:#171717;
+	height:596px;
+}
+.hkjd .piclist{
+	width: 1180px;
+	margin: 0 auto;
+	padding-top:78px;
+	height:352px;
+}
+.hkjd .piclist ul li{
+	width:188px;
+	float:left;
+	height:277px;
+	margin-right:10px;
+	overflow:hidden;
+	position:relative;
+}
+.hkjd .piclist a span{
+	z-index:1;
+	position:absolute;
+	width:100%;
+	position:absolute;
+	bottom:0px;
+	background:url(../cssimg/bpa2.png);
+	height:44px;
+	line-height:44px;
+	text-align:center;
+	font-size:18px;
+	color:#ffffff;
+	left:0px;
+}
+.hkjd .piclist a:hover span{
+	background:url(../cssimg/bpa1.png);
+}
+.hkjd .piclist ul li img{
+	z-index:0;
+	backface-visibility: hidden;
+	transition: transform 0.3s ease 0s;
+}
+.hkjd .piclist ul li a:hover img{
+	transform: scale(1.05);
+}
+.hkjdlist {
+	width:1180px;
+	height:73px;
+	position:relative;
+	margin:auto;
+}
+.hkjdlist .innterwrap .slides{ position:relative;}
+.hkjdlist .innterwrap{ width:1067px; height:73px; margin:0 auto;overflow:hidden; position:relative;}
+.hkjdlist .innterwrap ul li{ width:178px; height:73px; z-index:1; float:left; text-align:center; background:url(../cssimg/homeg_62.jpg) no-repeat right;}
+.hkjdlist .innterwrap ul li.on{z-index:3;}
+.hkjdlist  span.btn{width:17px; height:32px; position:absolute;  top:50%;  margin-top:-16px; z-index:3;cursor:pointer;}
+.hkjdlist  span.prv{left:0px; background-image:url(../cssimg/ckjilr.png);}
+.hkjdlist  span.next{right:0px; background-image:url(../cssimg/ckjilr.png);background-position:right;}
+
+/*首页产品*/
+.hprolist_c{
+	padding-top:10px;
+	padding-bottom:10px;
+	width:1180px;
+	margin:auto;
+}
+.hprolist{
+	padding-bottom:78px;
+}
+.hprolist .hptitle{
+	text-align:right;
+	background-repeat:no-repeat;
+	background-position:left;
+	background-color:#282828;
+	height:46px;
+}
+.hprolist .hptitle a{
+	display:inline-block;
+	height:46px;
+	color:#fff;
+	font-size:14px;
+	text-decoration:none;
+	line-height:46px;
+	width:85px;
+	text-align:center;
+	cursor:pointer;
+}
+.hprolist .hptitle a:hover{
+	background-color:#f99302;
+}
+.hprolist .hptitle a.on{
+	background-color:#f99302;
+}
+.hprolist .hpleft{
+	width:189px;
+	overflow:hidden;
+	float:left;
+	background:#fff;
+	height:469px;
+	border-bottom:1px solid #e4e4e4;
+	border-left:1px solid #e4e4e4;
+}
+.hprolist .hpleft dl{
+	width:190px;
+}
+.hprolist .hpleft dt{
+	height:46px;
+	border-bottom:1px solid #e4e4e4;
+	padding-left:30px;
+	line-height:45px;
+	background:url(../cssimg/homeg_82.jpg) no-repeat 15px center;
+	font-size:16px;
+}
+.hprolist .hpleft dd{
+	width:94px;
+	height:93px;
+	float:left;
+	border-bottom:1px solid #e4e4e4;
+	border-right:1px solid #e4e4e4;
+	text-align:center;
+}
+.hprolist .hpright{
+	float:left;
+	width:990px;
+	height:470px;
+	background:#fff;
+}
+.hprolist .hpright dl{
+	display:none;
+}
+.hprolist .hpright dt{
+	width:285px;
+	float:left;
+	overflow:hidden;
+	height:470px;
+}
+.hprolist .hpright dt img{
+	backface-visibility: hidden;
+	transform: scale(1, 1);
+	transition-duration: 0.6s;
+}
+.hprolist .hpright dt img:hover{
+	transform: scale(1.1, 1.1);
+	transition-duration: 0.6s;
+}
+.hprolist .hpright dd{
+	float:left;
+	padding-top:10px;
+	width:234px;
+	cursor:pointer;
+	text-align:center;
+	height:224px;
+	border-bottom:1px solid #e4e4e4;
+	border-right:1px solid #e4e4e4;
+	position:relative;
+	background:url("../cssimg/loading2.gif") no-repeat center 68px;
+}
+.hprolist .hpright span{
+	margin-left:20px;
+	display:block;
+	text-align:left;
+	padding-left:6px;
+	font-size:13px;
+	position:absolute;
+	bottom:8px;
+	left:0px;
+	background:url(../cssimg/homeg_106.jpg) no-repeat left center;
+}
+.hprolist .hpright img{
+	transition: all 0.4s ease-out 0s;
+	display: inline;
+}
+.hprolist .hpright img:hover{
+	 margin-left: -10px;
+}

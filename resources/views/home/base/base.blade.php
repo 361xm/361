@@ -8,7 +8,7 @@
     <meta property="qc:admins" content="15426722676361307246375" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link href="../../home/css/css.css" rel="stylesheet" type="text/css" />
-    <link href="../../home/css/home.css" rel="stylesheet" type="text/css" />
+    <link href="../../home/css/home1.css" rel="stylesheet" type="text/css" />
     <link href="../../home/css/css0520.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../home/css/jquery.fancybox-1.3.4.css" media="screen" />
     <link href="../../home/css/default.css" rel="stylesheet" type="text/css" />
